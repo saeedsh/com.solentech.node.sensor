@@ -14,7 +14,13 @@ public class Main {
         try {
             SensorAPI sensor = new SensorAPI(args[0]);
             ArrayList<Tag> tags = sensor.ReadTags();
-            System.out.println(tags.size());
+            System.out.println("=============================");
+            System.out.println("Number of tags: " + tags.size());
+            System.out.println("-----------------------------");
+            for (Tag t : tags) {
+                System.out.println(t.toString());
+            }
+            System.out.println("=============================");
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (SocketException e) {
