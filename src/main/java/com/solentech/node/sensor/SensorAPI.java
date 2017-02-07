@@ -1,24 +1,19 @@
 package com.solentech.node.sensor;
 
-
 /**
  * Created by Saeed Shariati on 12/1/16.
  */
-
 
 import java.net.*;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Random;
 
-
-
 public class SensorAPI {
 
     public static int UDP_PORT_COMMAND = 8080;
     public static int EPC_MAX_LENGTH = 32;
     public static int SOCKET_TIMEOUT_MS = 2000;
-
 
     InetAddress _address;
     DatagramSocket _socket;
