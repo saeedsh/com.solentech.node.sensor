@@ -1,6 +1,5 @@
 package com.solentech.node.sensor;
 
-
 import javax.xml.bind.DatatypeConverter;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -30,7 +29,7 @@ public class Simulator {
     public void start() throws IOException {
         byte[] receiveData = new byte[1024];
         byte[] sendData;
-        System.out.println("Server started...");
+        System.out.println(String.format("Server started on port %d ...", _port));
 
         String[] sample_epc = {
                 "e20068060000000000000000",
