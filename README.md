@@ -2,28 +2,27 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
+### How to build and run the sample app ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+First we need to get the git project 
 
-### How do I get set up? ###
+```
+git clone git@bitbucket.org:SolentechLab/com.solentech.node.sensor.git sensor
+cd sensor
+```
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+Build the package 
 
-### Contribution guidelines ###
+```
+mvn package
+```
 
-* Writing tests
-* Code review
-* Other guidelines
+You will see `sensor-*.jar` file in `/target`.
 
-### Who do I talk to? ###
+To run the application in terminal simply use the below command:
 
-* Repo owner or admin
-* Other community or team contact
+```
+java -jar target/sensor-1.0.jar <Sensor IP address>
+```
+
+Have fun!
